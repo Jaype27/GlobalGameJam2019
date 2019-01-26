@@ -28,12 +28,17 @@ public class PlayerControls : MonoBehaviour {
 			// anim.SetFloat("Speed", move);
 		}
 
-		if(isGrounded()) {
-			if(Input.GetButtonDown("Jump")) {
-				_rb.AddForce(Vector2.up * _jumpHeight);
-				// _rb.velocity = new Vector2(0, _jumpHeight);
+		if(Input.GetButtonDown("Jump")) {
+				// _rb.AddForce(Vector2.up * _jumpHeight);
+				_rb.velocity = new Vector2(0, _jumpHeight);
 			}
-		}
+
+		// if(isGrounded()) {
+		// 	if(Input.GetButtonDown("Jump")) {
+		// 		_rb.AddForce(Vector2.up * _jumpHeight);
+		// 		// _rb.velocity = new Vector2(0, _jumpHeight);
+		// 	}
+		// }
 	}
 
 	bool isGrounded() {
