@@ -36,7 +36,6 @@ public class MenuControls : MonoBehaviour {
 		_gameOverScreen.gameObject.SetActive(false);
 		_gm._lives = 3;
 		_gm.CheckSpawn();
-		_pc.gameObject.SetActive(true);
 		
 	}
 
