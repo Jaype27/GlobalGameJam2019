@@ -4,37 +4,29 @@ using UnityEngine;
 
 public class EnemyControls : MonoBehaviour {
 
-	public float _enemyMoveSpeed;
-	public bool _moveRight;
-	public Transform _wallCheck;
-	public float _wallCheckRadius;
-	public LayerMask _whatIsWall;
-	private bool _hittingWall;
-	private bool _notAtEdge;
-	public Transform _edgeCheck;
-	private Rigidbody _rb;
+	public float _enemySpeed;
+	private float _standbyTime;
+	public float _startWaitTime;
+	public Transform[] _waypoints;
+	private int _randomSpot;
 
 	// Use this for initialization
 	void Start () {
-		
+		_standbyTime = _startWaitTime;
+		_randomSpot = Random.Range(0, _waypoints.Length);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		// _hittingWall = Physics.OverlapSphere(_wallCheck.position, _wallCheckRadius, _whatIsWall);
+		transform.position = Vector2.MoveTowards(transform.position, _waypoints[_randomSpot].position, _enemySpeed * Time.deltaTime);
 
-		// _notAtEdge = Physics.OverlapSphere(_edgeCheck.position, _wallCheckRadius, _whatIsWall);
-
-		// if(_hittingWall || _notAtEdge) {
-		// 	_moveRight = !_moveRight;
-		// }
-
-		// if(_moveRight) {
-		// 	transform.localScale = new Vector3(-1f, 1f, 1f);
-		// 	_rb.velocity = new Vector3(_enemyMoveSpeed, _rb.velocity.y, _rb.velocity.z);
-		// } else {
-		// 	transform.localScale = new Vector3(1f, 1f, 1f);
-		// 	_rb.velocity = new Vector3(-_enemyMoveSpeed, _rb.velocity.y, _rb.velocity.z);
-		// }
+		if(Vector2.Distance(transform.position, _waypoints[_randomSpot].position) < 0.1) {
+			if(_standbyTime <= 0) {
+				_randomSpot = Random.Range(0, _waypoints.Length);
+				_standbyTime = _startWaitTime; 
+			} else {
+				_standbyTime -= Time.deltaTime;
+			}
+		}
 	}
 }

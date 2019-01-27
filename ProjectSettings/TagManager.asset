@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - killzone
+  - enemy
+  - items
+  - cherry
+  - gems
+  - win
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Ground
   - 
   - 
   - 

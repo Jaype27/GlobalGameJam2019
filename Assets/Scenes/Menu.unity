@@ -733,7 +733,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: NEW HOME
+  m_Text: 'NEW HOME: HUNTED'
 --- !u!222 &1496889000
 CanvasRenderer:
   m_ObjectHideFlags: 0
