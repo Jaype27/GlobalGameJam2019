@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
 	public int _gemAmount;
 	[HideInInspector]
 	public int _cherryAmount;
+
+
 	public int _lives;
 	public GameObject _spawnPoint;
 	public PlayerControls _pc;
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject[] _itemList;
 	public GameObject[] _itemSpawnList;
+	public GameObject _gameOverScreen;
 
 	public static GameManager Instance { get { return m_instance; } }
 	private static GameManager m_instance = null;
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour {
 		_gemAmount = 0;
 		_cherryAmount = 0;
 		_lives = 3;
+		
 	}
 	
 	// Update is called once per frame
@@ -102,6 +106,7 @@ public class GameManager : MonoBehaviour {
 		} else if (_lives < 1) {
 
 			Debug.Log("Game Over");
+			_gameOverScreen.gameObject.SetActive(true);
 		}
 	}
 }

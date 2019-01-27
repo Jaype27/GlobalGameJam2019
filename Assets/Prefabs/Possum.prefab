@@ -37,8 +37,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024120114539780}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.538824, y: -6.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.148876, y: -1.5, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02932474, y: -0.035265338}
+  m_Offset: {x: -0.03164801, y: -0.04223526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30135053, y: 0.20946929}
+  m_Size: {x: 0.22235781, y: 0.16764978}
   m_EdgeRadius: 0
 --- !u!95 &95063856877213998
 Animator:
@@ -120,7 +120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemySpeed: 5
   _startWaitTime: 1
-  _waypoints: []
+  _waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &212549645284055434
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -17,6 +17,8 @@ public class PlayerControls : MonoBehaviour {
 	private bool _isGrounded;
 	private Animator _anim;
 
+	public GameObject _gameOverScreen;
+
 	// Use this for initialization
 	void Start () {
 		_rb = GetComponent<Rigidbody2D>();
@@ -83,6 +85,8 @@ public class PlayerControls : MonoBehaviour {
 
 		if(other.gameObject.tag == "win") {
 			Debug.Log("You Win!");
+			_gameOverScreen.gameObject.SetActive(true);
+			this.gameObject.SetActive(false);
 		}
 	}
 }
