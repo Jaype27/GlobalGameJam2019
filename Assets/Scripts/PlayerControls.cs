@@ -8,6 +8,7 @@ public class PlayerControls : MonoBehaviour {
 	public float _moveSpeed;
 	public float _jumpHeight;
 	public float _rayLength;
+	private float _moveInput;
 	private Rigidbody2D _rb;
 	public GameManager _gm;
 
@@ -27,19 +28,19 @@ public class PlayerControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		_isGrounded = Physics2D.OverlapCircle(_groundMark.position, _groundMarkRad, _isGroundMask);
 
-		if(Input.GetAxis("Horizontal") != 0) {
-			Vector2 pos = gameObject.transform.position;
-			pos.x += Input.GetAxis("Horizontal") * _moveSpeed * Time.deltaTime;
-			gameObject.transform.position = pos;
-
-			_anim.SetBool("isMoveRight", true);
-
-			// float move = Input.GetAxis ("Horizontal");
-			// anim.SetFloat("Speed", move);
+		if(_moveInput > 0) {
+			transform.eulerAngles = new Vector3(0, 0, 0);
+			_anim.SetFloat("Speed", _moveSpeed);
+		} else if(_moveInput < 0) {
+			transform.eulerAngles = new Vector3(0, 180, 0);
+			_anim.SetFloat("Speed", _moveSpeed);
 		} else {
-			_anim.SetBool("isIdle", true);
+			_anim.SetFloat("Speed", 0);
 		}
+
+		
 
 		if(_isGrounded) {
 			if(Input.GetButtonDown("Jump")) {
@@ -49,11 +50,8 @@ public class PlayerControls : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		_isGrounded = Physics2D.OverlapCircle(_groundMark.position, _groundMarkRad, _isGroundMask);
-	}
-
-	bool isGrounded() {
-		return Physics2D.Raycast(transform.position, -Vector2.up, _rayLength);
+		_moveInput = Input.GetAxisRaw("Horizontal");
+		_rb.velocity = new Vector2(_moveInput * _moveSpeed, _rb.velocity.y);
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
