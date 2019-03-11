@@ -925,7 +925,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (8)
   m_TagString: Untagged
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1084,7 +1084,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1145,7 +1145,7 @@ GameObject:
   m_Layer: 0
   m_Name: PlayerSpawnPoint
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1576,8 +1576,7 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 711118180}
     m_Modifications:
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1617,13 +1616,11 @@ Prefab:
       propertyPath: m_Name
       value: Possum2
       objectReference: {fileID: 0}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1620696162}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 712397147}
@@ -1800,7 +1797,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 578807959}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9197a76ab904f144ebd3778a9ac359b8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1953,8 +1950,7 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 711118180}
     m_Modifications:
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1994,16 +1990,23 @@ Prefab:
       propertyPath: m_Name
       value: Possum4
       objectReference: {fileID: 0}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 290155993}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1672632124}
+    - target: {fileID: 114979015454251896, guid: d41686e8ee5822044ba71d2e81b38d11,
+        type: 2}
+      propertyPath: _rayDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024120114539780, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
   m_IsPrefabAsset: 0
@@ -2089,8 +2092,7 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 711118180}
     m_Modifications:
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2130,13 +2132,11 @@ Prefab:
       propertyPath: m_Name
       value: Possum3
       objectReference: {fileID: 0}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1527570064}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: _waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 343055731}
@@ -2426,7 +2426,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3405,7 +3405,7 @@ GameObject:
   m_Layer: 0
   m_Name: GroundMark
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3433,7 +3433,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8900,7 +8900,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9140,7 +9140,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9216,7 +9216,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9244,7 +9244,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9282,19 +9282,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4215909286462288, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4215909286462288, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4215909286462288, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4215909286462288, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4215909286462288, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
       propertyPath: m_RootOrder
@@ -9304,16 +9304,6 @@ Prefab:
       propertyPath: m_Name
       value: Possum1
       objectReference: {fileID: 0}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
-      propertyPath: _waypoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1573197349}
-    - target: {fileID: 114154112085096218, guid: d41686e8ee5822044ba71d2e81b38d11,
-        type: 2}
-      propertyPath: _waypoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 1610634254}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d41686e8ee5822044ba71d2e81b38d11, type: 2}
   m_IsPrefabAsset: 0
@@ -9368,7 +9358,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (9)
   m_TagString: Untagged
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9396,7 +9386,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (10)
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9726,7 +9716,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12629,7 +12619,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (11)
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
